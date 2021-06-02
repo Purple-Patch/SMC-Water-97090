@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/animate.css" />
+</head>
+<body>
+    <div class="screenblock">
+        <div id="fbg">
+            <img id="wbg" src="assets/bg.jpg">
+            <img class="abs animate__animated" id="waterlogo" src="assets/waterlogo.png">
+            <img class="abs animate__animated" id="logo1" src="assets/logo.png">
+            <img class="abs animate__animated" id="text1" src="assets/text1.png">
+        </div>
+        <div id="secbg">
+            <img src="assets/bg.jpg">
+            <img class="abs animate__animated" id="waterlogo2" src="assets/waterlogo.png">
+            <img class="abs animate__animated" id="logo2" src="assets/logo.png">
+            <img class="abs animate__animated" id="text3" src="assets/text3.png">
+            <img class="abs animate__animated" id="text4" src="assets/text4.png">
+            <img class="abs animate__animated" id="sakib" src="assets/Sakib.png">
+        </div>
+    </div>
+    <script src="assets/jquery.min.js"></script>
+<script type="text/javascript">
+    function ctaFunction() {
+        window.open("{CLICK_MACRO}");
+    }
+
+    function _dsptr(e) {
+        var track = new Image();
+        track.src = "{EVENT_URL}" + e;
+    };
+
+    var ft = true;
+
+    function dragft() {
+        if (ft) {
+            ft = false;
+            _dsptr("started");
+        }
+    }
+
+    var ft2 = true;
+    function dragft2() {
+        if (ft2) {
+            ft2 = false;
+            _dsptr("finished");
+        }
+    }
+    </script>
+    <script src="assets/functions.js"></script>
+</body>
+</html>
